@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>unsafe-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="71.8715801" cy="71.8057249" rx="71.8715801" ry="71.8057249"></ellipse>
+    </defs>
+    <g id="Extension" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-542.000000, -222.000000)">
+            <g id="unsafe-button" transform="translate(542.000000, 222.000000)">
+                <g id="Shape">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#E21B1B" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <path d="M144.74316,83.4932212 L105.412342,43 L45.2801257,107.18708 L84.2131275,147.270727 C116.031839,142.765413 141.089876,116.482136 144.74316,83.4932212 Z" fill="#C40606" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group" transform="translate(38.000000, 38.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M62.6630053,68.4930409 C61.1664078,68.4930409 59.6721487,67.922986 58.5286547,66.782876 L1.87308532,10.1768833 C-0.411564314,7.89432702 -0.411564314,4.19831479 1.87308532,1.91809485 C4.15773495,-0.362125093 7.85713691,-0.364461384 10.1394481,1.91809485 L66.7973559,58.5240876 C69.0820055,60.8066438 69.0820055,64.5026561 66.7973559,66.782876 C65.6538619,67.922986 64.1596028,68.4930409 62.6630053,68.4930409 Z" id="Shape"></path>
+                    <path d="M6.00509749,68.4930409 C4.50849999,68.4930409 3.01424092,67.922986 1.87074688,66.782876 C-0.413902748,64.5003198 -0.413902748,60.8043075 1.87074688,58.5240876 L58.5286547,1.91809485 C60.8133043,-0.364461384 64.5127063,-0.364461384 66.7950175,1.91809485 C69.0773287,4.20065108 69.0796671,7.89666331 66.7950175,10.1768833 L10.1394481,66.782876 C8.99829251,67.922986 7.501695,68.4930409 6.00509749,68.4930409 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

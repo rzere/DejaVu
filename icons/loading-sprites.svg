@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="472px" height="144px" viewBox="0 0 472 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="16.8312206%" y1="14.0676465%" x2="76.2598611%" y2="62.2932214%" id="linearGradient-1">
+            <stop stop-color="#C6C6C6" offset="0%"></stop>
+            <stop stop-color="#959595" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="16.8312206%" y1="14.2001809%" x2="76.2598611%" y2="62.2478786%" id="linearGradient-2">
+            <stop stop-color="#C6C6C6" offset="0%"></stop>
+            <stop stop-color="#959595" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" fill-rule="nonzero">
+            <g id="loading-3" transform="translate(328.000000, 0.000000)">
+                <g id="loading" fill="url(#linearGradient-2)">
+                    <g id="Group">
+                        <g id="Path-6">
+                            <g id="Mask">
+                                <ellipse id="path-2" cx="71.7573204" cy="71.890024" rx="71.7573204" ry="71.890024"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Third" transform="translate(44.000000, 64.000000)">
+                    <circle id="Oval" fill="#FFFFFF" cx="8" cy="8" r="8"></circle>
+                    <circle id="Oval-Copy" fill="#FFFFFF" cx="29" cy="8" r="8"></circle>
+                    <circle id="Oval-Copy-2" stroke="#FFFFFF" stroke-width="3" fill="#B4B4B4" cx="49" cy="8" r="8"></circle>
+                </g>
+            </g>
+            <g id="Loading-2" transform="translate(163.000000, 0.000000)">
+                <g id="loading" fill="url(#linearGradient-2)">
+                    <g id="Group">
+                        <g id="Path-6">
+                            <g id="Mask">
+                                <ellipse id="path-2" cx="71.7573204" cy="71.890024" rx="71.7573204" ry="71.890024"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Second" transform="translate(44.000000, 64.000000)">
+                    <g id="Group">
+                        <g id="Group-8">
+                            <circle id="Oval" fill="#FFFFFF" cx="8" cy="8" r="8"></circle>
+                            <circle id="Oval-Copy" stroke="#FFFFFF" stroke-width="3" fill="#B4B4B4" cx="29" cy="8" r="8"></circle>
+                            <circle id="Oval-Copy-2" fill="#FFFFFF" cx="49" cy="8" r="8"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="loading-1">
+                <g id="loading" fill="url(#linearGradient-2)">
+                    <g id="Group">
+                        <g id="Path-6">
+                            <g id="Mask">
+                                <ellipse id="path-2" cx="71.7573204" cy="71.890024" rx="71.7573204" ry="71.890024"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="First" transform="translate(44.000000, 64.000000)">
+                    <g id="Group">
+                        <g id="Group-8">
+                            <circle id="Oval" stroke="#FFFFFF" stroke-width="3" fill="#B4B4B4" cx="8" cy="8" r="8"></circle>
+                            <circle id="Oval-Copy" fill="#FFFFFF" cx="29" cy="8" r="8"></circle>
+                            <circle id="Oval-Copy-2" fill="#FFFFFF" cx="49" cy="8" r="8"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

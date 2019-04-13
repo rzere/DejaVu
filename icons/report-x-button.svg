@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="115px" viewBox="0 0 94 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>x-button copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="60.0460051" cy="59.9909856" rx="60.0460051" ry="59.9909856"></ellipse>
+    </defs>
+    <g id="Extension" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Report" transform="translate(-485.000000, -215.000000)">
+            <g id="x-button-copy" transform="translate(458.000000, 210.000000)">
+                <g id="Shape">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#E21B1B" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <path d="M126.496917,70.9574165 L91.1047939,35.7682103 L36.9943815,91.5477292 L72.0285268,126.38101 C100.660826,122.465825 123.209483,99.6252696 126.496917,70.9574165 Z" fill="#C40606" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group" transform="translate(34.000000, 34.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M51.822635,56.6441051 C50.5849409,56.6441051 49.3491808,56.1726666 48.4035053,55.2297897 L1.54905141,8.41633598 C-0.340365853,6.52864997 -0.340365853,3.47202841 1.54905141,1.58627453 C3.43846867,-0.299479356 6.49789355,-0.301411481 8.38537691,1.58627453 L55.2417647,48.3997283 C57.1311819,50.2874143 57.1311819,53.3440358 55.2417647,55.2297897 C54.2960891,56.1726666 53.060329,56.6441051 51.822635,56.6441051 Z" id="Shape"></path>
+                    <path d="M4.96624721,56.6441051 C3.7285532,56.6441051 2.49279309,56.1726666 1.54711751,55.2297897 C-0.34229975,53.3421037 -0.34229975,50.2854821 1.54711751,48.3997283 L48.4035053,1.58627453 C50.2929225,-0.301411481 53.3523474,-0.301411481 55.2398308,1.58627453 C57.1273141,3.47396053 57.129248,6.5305821 55.2398308,8.41633598 L8.38537691,55.2297897 C7.44163523,56.1726666 6.20394122,56.6441051 4.96624721,56.6441051 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

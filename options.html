@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700,300" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Options & Settings</title>
+  <style>
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
+    body {
+      color: white;
+      font-family: "Lato";
+      font-weight: light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: #3498db;
+      /*linear-gradient(155deg, rgba(234, 234, 234, 1) 0%, rgba(153, 213, 235, 1) 67%);*/
+    }
+
+    .open-walkthrough {
+      border: 0;
+      background: #5da3f2;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 12px;
+      height: 40px;
+      width: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -20px;
+      margin-left: -60px;
+    }
+
+    .walkthrough {
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: 0px 0px;
+      border-radius: 15px;
+      display: none;
+      flex-direction: column;
+      flex: 0 0 auto;
+      font-size: 14px;
+      min-height: 400px;
+      overflow: hidden;
+      transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      width: 400px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+    }
+
+    .walkthrough.show {
+      display: flex;
+      opacity: 0;
+      transform: translateY(72px);
+    }
+
+    .walkthrough.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .walkthrough .walkthrough-body {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex: 1;
+      text-align: center;
+    }
+
+    .walkthrough .walkthrough-body .prev-screen,
+    .walkthrough .walkthrough-body .next-screen {
+      align-self: stretch;
+      background: none;
+      border: 0;
+      margin-top: 40px;
+      color: rgb(36, 81, 112);
+      cursor: pointer;
+      flex: 0 0 auto;
+      font-size: 24px;
+      opacity: 1;
+      outline: none;
+      padding: 16px;
+      transform: scale(1);
+      transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      z-index: 1000;
+    }
+
+    .walkthrough .walkthrough-body .prev-screen:hover,
+    .walkthrough .walkthrough-body .prev-screen:active,
+    .walkthrough .walkthrough-body .next-screen:hover,
+    .walkthrough .walkthrough-body .next-screen:active {
+      color: rgb(36, 81, 112);
+      transform-origin: center;
+      transform: scale(1.25);
+    }
+
+    .walkthrough .walkthrough-body .prev-screen:disabled,
+    .walkthrough .walkthrough-body .next-screen:disabled {
+      opacity: 0;
+    }
+
+    .walkthrough .walkthrough-body .prev-screen {
+      order: 1;
+    }
+
+    .walkthrough .walkthrough-body .next-screen {
+      order: 3;
+    }
+
+    .walkthrough .walkthrough-body .screens {
+      flex: 1;
+      align-self: stretch;
+      position: relative;
+      margin: 0 -16px;
+      padding: 0;
+      order: 2;
+    }
+
+    .walkthrough .walkthrough-body .screens .screen {
+      position: absolute;
+      list-style-type: none;
+    }
+
+    .walkthrough .walkthrough-body .media {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 132px;
+      height: 132px;
+      margin: 32px 240px;
+      width: 132px;
+    }
+
+    .walkthrough .walkthrough-body h3 {
+      font-size: 17px;
+      line-height: 1.4em;
+      margin-top: -10px;
+      color: rgb(36, 81, 112);
+    }
+
+    .walkthrough .walkthrough-body h2 {
+      font-size: 20px;
+      line-height: 1.4em;
+      margin-top: -10px;
+      color: rgb(36, 81, 112);
+    }
+
+    .walkthrough .walkthrough-body p {
+      line-height: 1.6em;
+      font-size: 13px;
+      margin-top: 0;
+      padding-top: 0;
+      color: rgb(36, 81, 112);
+    }
+
+    .walkthrough .walkthrough-footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    .walkthrough .walkthrough-footer button {
+      height: 30px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      background: transparent;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #3498db;
+      font-size: 10px;
+      margin: 0;
+      outline: 0;
+      transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .walkthrough .walkthrough-footer button:disabled {
+      cursor: pointer;
+      background: gray;
+    }
+
+    .walkthrough .walkthrough-footer button.finish {
+      background-color: #015287;
+      width: 220px;
+      height: 60px;
+      position: absolute;
+      color: #ffffff;
+      left: 180px;
+      bottom: 80px;
+      opacity: 0;
+      transform: scale(0, 1);
+      transform-origin: center;
+      transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .walkthrough .walkthrough-footer button.finish.active {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+
+    .walkthrough .screens {
+      margin: 0;
+    }
+
+    .walkthrough .screens .trusted-sources {
+      width: 400px;
+      padding-left: 40px;
+      padding-top: 30px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      z-index: 9000;
+      overflow: auto;
+      max-height: 350px;
+      min-width: 535px;
+    }
+
+    .walkthrough .screens .trusted-sources div {
+      display: flex;
+      padding: 10px;
+      flex-basis: calc(20%);
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .walkthrough .screens .media.logo .logo {
+      margin-top: 40px;
+      transform: translateY(-60px);
+      transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      width: 80px;
+    }
+
+    .walkthrough .screens .media.supercharge .supercharge {
+      margin-top: 40px;
+      margin-left: -100px;
+      transform: translateY(-60px);
+      transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      width: 300px;
+    }
+
+    .walkthrough .screens .media.captcha .captcha {
+      margin-top: 120px;
+      margin-left: -60px;
+      transform: translateY(-60px);
+      transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      width: 200px;
+    }
+
+    .walkthrough .screens .screen {
+      opacity: 0;
+      position: absolute;
+      transform: translateX(-72px);
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      width: 100%;
+    }
+
+    .walkthrough .screens .screen.active {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      transition-delay: 0.4s;
+    }
+
+    .walkthrough .screens .screen.active~.screen {
+      opacity: 0;
+      transform: translateX(600px);
+    }
+
+    .walkthrough .screens .screen.active .media.logo .logo {
+      opacity: 0.8;
+      transform: translateY(0);
+      transition-delay: 0.6s;
+    }
+
+    .walkthrough .screens .screen.active .media.supercharge .supercharge {
+      opacity: 0.8;
+      transform: translateY(0);
+      transition-delay: 0.6s;
+    }
+
+
+    .indicator{
+      padding: 5px;
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      transition: 0.5s ease;
+    }
+
+    .indicator:hover{
+      position: relative;
+      top: -2px;
+    }
+
+    .safe{
+      animation-delay: 0s;
+      width: 40px;
+    }
+    .caution{
+      animation-delay: .75s;
+      width: 40px;
+    }
+    .unsafe{
+      animation-delay: 1.5s;
+      width: 40px;
+    }
+
+
+    .walkthrough .screens .screen.active .news_icon{
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-delay: .75s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      transition: 0.5s ease;
+
+    }
+    .news_icon{
+      vertical-align: top;
+    }
+
+    .captcha_div{
+      margin-top: 50px;
+    }
+
+    .news_icon:hover{
+      position: relative;
+      top: -2px;
+    }
+    .big_screen{
+      height: 600px;
+    }
+    .header_image{
+      height: 140px;
+      margin-top: 90px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .footer_image {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #3498db;
+    border-style: solid;
+    }
+    .footer_image_2 {
+    height: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #3498db;
+    border-style: solid;
+    }
+    .header_text{
+      font-size: 18px;
+      color: #3498db;
+    }
+
+    .full_walkscreen{
+      width: 100%;
+    }
+    .page_number{
+      color: #F15F46;
+    }
+
+    .finish_captcha_subtitle{
+      color: #A4A4A4;
+      font-weight: 700;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class='walkthrough show reveal'>
+    <div class='walkthrough-body'>
+      <ul class='screens animate'>
+        <li class='screen active'>
+          <div class="full_walkscreen">
+            <img class="header_image" src="icons/blue-surfer.svg" />
+            <text class="header_text">You <strong>don't have time</strong> to read </text>
+            <br/>
+              <text class="header_text">fact checkers and bot trackers.</text>
+          <div>
+        </li>
+        <li class='screen'>
+          <div class="full_walkscreen">
+            <img class="header_image" src="icons/blue-searcher.svg" />
+            <text class="header_text">SurfSafe scans for <strong>known fake news</strong></text>
+            <br/>
+              <text class="header_text">from fact checkers <strong>as you surf.</strong></text>
+              <br/>
+          <div>
+          </li>
+
+
+          <li class='screen big_screen'>
+            <div class="full_walkscreen">
+              <img class="header_image" src="icons/blue-scanner.svg" />
+              <text class="header_text">SurfSafe warns you</text>
+              <br/>
+                <text class="header_text">with a <strong>simple indicator</strong></text>
+            <div>
+              <img class="footer_image_2" src="icons/tim-kaine.gif" />
+            </li>
+
+            <li class='screen big_screen'>
+              <div class="full_walkscreen">
+                <img class="header_image" src="icons/blue-caller.svg" />
+                <text class="header_text">Request a <strong>fact check</strong> on</text>
+                <br/>
+                  <text class="header_text"><strong>any content</strong> that has yet to be</text>
+              <div>
+                <img class="footer_image" src="icons/how-to-factcheck.gif" />
+              </li>
+            <li class='screen big_screen'>
+              <div class="full_walkscreen">
+                <img class="header_image" src="icons/blue-highchair.svg" />
+                <text class="header_text">It's time for a safer internet.</text>
+                <br/>
+                  <text class="header_text"><strong>It's time to SurfSafe</strong></text>
+                  <center>
+                    <div>
+                  <div data-callback='verifyCallback' data-expired-callback='expiredCallback' data-error-callback='errorCallback' class="g-recaptcha captcha_div" data-sitekey="6LehMmgUAAAAAEK3gqdyeWDlvnAFmNOo2cQIqMCS"></div>
+                  <br/>
+                  <text class="finish_captcha_subtitle">Finish Captcha to Surf Safe</text>
+                  </div>
+                </center>
+              <div>
+              </li>
+            <li class='screen'>
+          <li class='screen'>
+            <div class='media captcha'>
+              <img class='captcha' src='icons/captcha_img.svg'>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>
+              Captcha
+            </h2>
+            <div style='margin-left: 150px' data-callback='verifyCallback' data-expired-callback='expiredCallback' data-error-callback='errorCallback' class="g-recaptcha" data-sitekey="6LehMmgUAAAAAEK3gqdyeWDlvnAFmNOo2cQIqMCS"></div>
+            <!-- <div style='margin-left: 150px' class="g-recaptcha" data-sitekey="6LeqFm4UAAAAACDmPRWXe46u69n-96Isb2JKiuma"></div> -->
+
+          </form>
+        </li>
+        <li class='screen'>
+          <div class='media supercharge'>
+            <img class='supercharge' src='icons/supercharge.svg'>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>
+            Successfully Supercharged
+          </h2>
+          <p>
+            The world is now one step closer to a
+            <br> fake-news-free internet.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class='walkthrough-footer'>
+      <button class='button next-screen' style="z-index:99999999999999">Next</button>
+      <button class='button finish close' disabled='true'>Start Surfing</button>
+    </div>
+
+    <script src="scripts/options.js"></script>
+  </body>
+
+  </html>

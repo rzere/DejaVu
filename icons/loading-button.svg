@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="176px" viewBox="0 0 175 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>loading</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-20.8%" y="-16.7%" width="136.1%" height="136.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="-4" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.217193161 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="16.8312206%" y1="14.0676465%" x2="76.2598611%" y2="62.2932214%" id="linearGradient-2">
+            <stop stop-color="#C6C6C6" offset="0%"></stop>
+            <stop stop-color="#959595" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-3" cx="71.7573204" cy="71.890024" rx="71.7573204" ry="71.890024"></ellipse>
+    </defs>
+    <g id="Extension" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-418.000000, -11.000000)">
+            <g id="loading" filter="url(#filter-1)" transform="translate(438.000000, 25.000000)">
+                <g id="Group">
+                    <g id="Path-6">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Group-8" transform="translate(44.000000, 64.000000)" fill="#FFFFFF">
+                        <circle id="Oval" cx="8" cy="8" r="8"></circle>
+                        <circle id="Oval-Copy" cx="29" cy="8" r="8"></circle>
+                        <circle id="Oval-Copy-2" cx="49" cy="8" r="8"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

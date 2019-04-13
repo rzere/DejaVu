@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="71.8715801" cy="71.8057249" rx="71.8715801" ry="71.8057249"></ellipse>
+    </defs>
+    <g id="Extension" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-655.000000, -25.000000)">
+            <g id="search" transform="translate(655.000000, 25.000000)">
+                <g id="Shape">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#04BAED" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <path d="M24,73.2601957 L141.86281,189 L209,125.02138 L110.336864,31 C85.6521348,65.4881223 67.58969,85.53205 56.14953,91.1317831 C44.70937,96.7315162 33.99286,90.7743204 24,73.2601957 Z" id="Path-6" fill="#1190B4" opacity="0.525418931" mask="url(#mask-2)"></path>
+                </g>
+                <polyline id="Path-3" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" points="39 80.1587683 66.6183014 104.441621 110.347279 42"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
