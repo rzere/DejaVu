@@ -3,7 +3,7 @@ layout: default
 ---
 ## What is DejaVu?
 
-> DejaVu is a platform that allows journalists
+DejaVu is a platform that allows journalists
 to compare images, determine which images
 they consider to be the originals, and communicate
 these findings with other journalists within their
@@ -11,7 +11,7 @@ organization.
 
 ## Why is it useful?
 
-> A large impact of the growth of technology in the last
+A large impact of the growth of technology in the last
 decade has been the revolution of the news industry.
 With a simple Google search, an individual can now
 have access to an endless number of news sources and
@@ -31,6 +31,6 @@ prevent the spreading of fake news.
 
 ## What is Visual Misinformation?
 
-> Visual misinformation is defined as an image that is
+Visual misinformation is defined as an image that is
 misleading, manipulated, or fabricated, or sharing of
 genuine content outside of context.
