@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+<img src="icons/dejavu_transparent.png"
+/>
     <!-- Include your post title, byline, date, and other info inside the header here. -->
 </div>
 
