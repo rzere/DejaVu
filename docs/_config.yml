@@ -1,6 +1,6 @@
 title: DejaVu
 description: A Google Chrome Extension for Journalists to Collaboratively Address Visual Misinformation
-featured-img: /icons/dejavu_transparent.png
+featured-img: assets/img/dejavu_transparent.png
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
