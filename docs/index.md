@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-![DejaVu](assets/img/dejavu_transparent.png)
-
-# DejaVu
+# ![DejaVu](assets/img/dejavu_transparent.png)
 
 > DejaVu is a platform that allows journalists
 to compare images, determine which images
