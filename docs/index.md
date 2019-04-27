@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-<img src="assets/img/dejavu_transparent.png"
-/>
-    <!-- Include your post title, byline, date, and other info inside the header here. -->
-</div>
+![DejaVu](assets/img/dejavu_transparent.png)
 
 # DejaVu
 
