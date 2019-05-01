@@ -1,14 +1,14 @@
 {
   "appName": {
-    "message": "SurfSafe - join the fight against fake news",
-    "description": "SurfSafe supercharges your browser to scan for harmful images."
+    "message": "DejaVu",
+    "description": "Helping journalists to collaboratively address Visual Misinformation."
   },
   "appDescription": {
-    "message": "Supercharge your browser to catch fake news.",
-    "description": "Supercharge your browser to catch fake news."
+    "message": "Helping journalists to collaboratively address Visual Misinformation.",
+    "description": "Helping journalists to collaboratively address Visual Misinformation."
   },
   "btnTooltip": {
-    "message": "SurfSafe",
+    "message": "DejaVu",
     "description": "Choose trusted sources."
   }
 }
