@@ -2,8 +2,8 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
   "name": "__MSG_appName__",
-  "short_name" : "SurfSafe",
-  "version": "1.2.2",
+  "short_name" : "DejaVu",
+  "version": "1.0",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "web_accessible_resources": ["icons/*"],
@@ -35,7 +35,7 @@
         "https://*/*"
       ],
       "css" : [
-        "styles/surfsafe.css",
+        "styles/popup.css",
         "styles/options.css"
       ],
       "js": [
@@ -51,7 +51,7 @@
       "19": "icons/icon-19.png",
       "38": "icons/icon-38.png"
     },
-    "default_title": "SurfSafe",
+    "default_title": "DejaVu",
     "default_popup": "popup.html"
   }
 }
