@@ -3603,11 +3603,12 @@
                 })
                 .attr("src", img_data[0].image_url), report_modal.find("#reverse_image")
                     //.click(sendReport)
-                        .click(function(){
+                        .click(openSidebar)
                             // alert( "Thank you for reverse image searching!" );
                             // openInNewTab(img_data[0].image_url);
-                            openInNewTab('https://images.google.com/searchbyimage?image_url=' + img_data[0].image_url);
-                })
+                            //openInNewTab('https://images.google.com/searchbyimage?image_url=' + img_data[0].image_url);
+
+
                 .attr("src", img_data[0].image_url), report_modal.find("#send_report")
                     //.click(sendReport)
                         .click(function(){
