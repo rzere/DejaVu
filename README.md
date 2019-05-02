@@ -1,6 +1,6 @@
 <p align="center">
-<img src="icons/dejavu_small.png"
-     alt="DejaVu" height="120" width=auto/>
+<a href = "https://rzere.github.io/DejaVu"><img src="icons/dejavu_small.png"
+     alt="DejaVu" height="120" width=auto/></a>
 </p>
 
 ## What is DejaVu?
