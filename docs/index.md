@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<img src="assets/img/dejavu_ss.png"/>
 
 ## What is DejaVu?
 
@@ -36,3 +35,7 @@ prevent the spreading of fake news.
 Visual misinformation is defined as an image that is
 misleading, manipulated, or fabricated, or sharing of
 genuine content outside of context.
+
+## DejaVu Interface:
+
+<img src="assets/img/dejavu_ss.png"/>
