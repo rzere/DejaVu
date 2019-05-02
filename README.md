@@ -1,8 +1,7 @@
 <p align="center">
 <img src="icons/dejavu_small.png"
-     alt="DejaVu"/>
+     alt="DejaVu" height="120" width=auto/>
 </p>
-<hr>
 
 ## What is DejaVu?
 
