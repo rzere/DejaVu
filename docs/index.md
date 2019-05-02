@@ -37,4 +37,4 @@ genuine content outside of context.
 
 ## DejaVu Interface
 
-<img src="assets/img/dejavu_ss.png"/ style="border-radius:10px">
+<img src="assets/img/dejavu_ss.png"/ style="border-radius:10%">
