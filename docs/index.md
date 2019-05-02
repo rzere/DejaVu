@@ -7,7 +7,7 @@ layout: default
 DejaVu is a platform that helps journalists
 compare images, determine which images
 they consider to be original, manipulated or used out-of-context and communicate
-their findings with other journalists.
+their findings with others.
 
 ## Why is it Useful?
 
@@ -37,4 +37,4 @@ genuine content outside of context.
 
 ## DejaVu Interface
 
-<img src="assets/img/dejavu_ss.png"/>
+<img src="assets/img/dejavu_ss.png"/ style="border-radius:10px">
