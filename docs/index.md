@@ -10,8 +10,7 @@ evaluate images online by allowing them to check whether an image has previously
 ## What is Visual Misinformation?
 
 Visual misinformation is defined as an image that is
-misleading, manipulated, or fabricated, or sharing of
-genuine content outside of context.
+misleading, manipulated, or fabricated, or shared outside of context.
 
 ## Why is it Useful?
 
