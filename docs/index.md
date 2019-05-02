@@ -5,7 +5,7 @@ layout: default
 ## What is DejaVu?
 
 DejaVu is a platform that helps journalists
-evaluate images online by allowing them to check whether an image has previously been flagged as manipulated, used out-of-context or fabricated, and report images that they identify as visual misinformation.
+evaluate images online by allowing them to check whether an image has previously been flagged as suspicious, and report images that they identify as visual misinformation.
 
 ## What is Visual Misinformation?
 
