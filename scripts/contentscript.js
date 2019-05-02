@@ -3557,7 +3557,7 @@
                         }), sidebar.css({
                         "background-image": "url(" + chrome.runtime.getURL("icons/bg-yellow.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/caution-button.svg") + "),url(" + chrome.runtime.getURL("icons/yellow-bottom.png") + ")"
                     })) : "Unknown" == response.classification ? (sidebar.find("#ss_sb_status_icon")
-                        .attr("src", chrome.runtime.getURL("icons/unknown-button.svg")), sidebar.find("#ss_sd_title")
+                        .attr("src", chrome.runtime.getURL("icons/dejavulogo.png")), sidebar.find("#ss_sd_title")
                         .empty(), sidebar.css({
                         "background-image": "url(" + chrome.runtime.getURL("icons/bg-grey.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/unknown-button.svg") + "),url(" + chrome.runtime.getURL("icons/gray-bottom.png") + ")",
                         animation: "none"

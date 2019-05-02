@@ -32,10 +32,5 @@ or taken out of their original context or, more broadly
 put, identifying visual misinformation in order to
 prevent the spreading of fake news.
 
-## DejaVu Interface
-
 <img src="assets/img/dejavu_ss.png"/>
-
-## Future Features
-
-The next version of this system will allow journalists to look up duplicate and near-duplicate images from multiple sources at the same time.
+<img src="assets/img/dejavu_ss2.png"/>
