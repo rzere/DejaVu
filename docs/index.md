@@ -39,4 +39,4 @@ prevent the spreading of fake news.
 
 ## Future Features
 
-The next version of this system will allow journalists to lookup duplicate and near-duplicate images from multiple sources at the same time.
+The next version of this system will allow journalists to look up duplicate and near-duplicate images from multiple sources at the same time.
