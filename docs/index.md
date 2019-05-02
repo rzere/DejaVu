@@ -32,5 +32,6 @@ or taken out of their original context or, more broadly
 put, identifying visual misinformation in order to
 prevent the spreading of fake news.
 
+## DejaVu Interface
+
 <img src="assets/img/dejavu_ss.png"/>
-<img src="assets/img/dejavu_ss2.png"/>
