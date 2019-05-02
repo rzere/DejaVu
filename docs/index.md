@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<img src="/icons/dejavu_ss.png"/>
+
 ## What is DejaVu?
 
 DejaVu is a platform that allows journalists
