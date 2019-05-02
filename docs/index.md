@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<img src="/icons/dejavu_ss.png"/>
+<img src="/assets/img/dejavu_ss.png"/>
 
 ## What is DejaVu?
 
