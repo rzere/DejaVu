@@ -10,7 +10,7 @@ they consider to be the originals, and communicate
 these findings with other journalists within their
 organization.
 
-## Why is it useful?
+## Why is it Useful?
 
 A large impact of the growth of technology in the last
 decade has been the revolution of the news industry.
@@ -36,6 +36,6 @@ Visual misinformation is defined as an image that is
 misleading, manipulated, or fabricated, or sharing of
 genuine content outside of context.
 
-## DejaVu Interface:
+## DejaVu Interface
 
 <img src="assets/img/dejavu_ss.png"/>
