@@ -4,11 +4,10 @@ layout: default
 
 ## What is DejaVu?
 
-DejaVu is a platform that allows journalists
-to compare images, determine which images
-they consider to be the originals, and communicate
-these findings with other journalists within their
-organization.
+DejaVu is a platform that helps journalists
+compare images, determine which images
+they consider to be original, manipulated or used out-of-context and communicate
+their findings with other journalists.
 
 ## Why is it Useful?
 
