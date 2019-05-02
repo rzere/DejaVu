@@ -35,6 +35,6 @@ Visual misinformation is defined as an image that is
 misleading, manipulated, or fabricated, or sharing of
 genuine content outside of context.
 
-## DejaVu Interface
+## DejaVu Interface 
 
 <img src="assets/img/dejavu_ss.png"/>

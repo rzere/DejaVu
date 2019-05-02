@@ -3595,7 +3595,7 @@
                     report_modal.css({
                         display: "none"
                     })
-                }), report_modal.find("#ss_person_warning")
+                }) 
                 .attr("src", img_data[0].image_url), report_modal.find("#check_image")
                 //.click(sendReport)
                 .click(function() {
