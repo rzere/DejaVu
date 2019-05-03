@@ -42,7 +42,7 @@ We have an [alpha prototype](https://github.com/rzere/DejaVu/) that supports the
 ### Reverse Image Search
 Determine what content is genuine by seeing other appearances of the same image
 ### Checking for Reports
-Retrieve information on previously reported images such as flags, comments and author
+Retrieve information on previously reported images such as flags, comments, and the author
 ### Reporting Images
 Flag an image as misleading, out-of-context or fabricated and share your findings with others
 
