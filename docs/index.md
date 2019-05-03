@@ -38,13 +38,12 @@ prevent the spreading of fake news.
 
 ## Current Version
 
-We have an [alpha prototype](https://github.com/rzere/DejaVu/) which supports the following features:
-#### Reverse Image Search
+We have an [alpha prototype](https://github.com/rzere/DejaVu/) which supports the following functionality:
+### Reverse Image Search
 Determine what content is genuine by seeing other appearances of the same image
-#### Checking for Reports
+### Checking for Reports
 Retrieve information on previously reported images.
-Functionality still under development:
-#### Reporting Images
+### Reporting Images
 Flag images as misleading, out-of-context or fabricated and share your findings with others.
 
 <br>
