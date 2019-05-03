@@ -3295,7 +3295,7 @@
             _storage = (_interopRequireDefault(_ext), require("./utils/storage")),
             _jquery = (_interopRequireDefault(_storage), require("jquery")),
             _jquery2 = _interopRequireDefault(_jquery),
-            url = "https://rzere.github.io/DejaVu",
+            url = "https://python-dot-surfsafe-rbl.appspot.com/",
             recaptchaKey = "",
             selected_sources = [],
             verifyCallback = function(response) {

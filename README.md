@@ -9,11 +9,11 @@ DejaVu is a browser extension that allows journalists to compare images, determi
 they consider to be the originals, and communicate these findings with other journalists within their organization.
 
 ## What can DejaVu do?
-#### Reverse Image Search
+#### Reverse Image Search:
 Helps journalists determine what content is genuine by showing other appearances of the same image.
-#### Reporting Images
+#### Reporting Images:
 Journalists can flag images as misleading, out-of-context or fabricated. and share their findings.
-#### Checking for Reports
+#### Checking for Reports:
 Allows journalists to query our database of previously flagged images.
 
 
