@@ -34,4 +34,4 @@ prevent the spreading of fake news.
 
 ## DejaVu Interface
 
-<img src="assets/img/dejavu_ss.png"/>
+<img src="assets/gif/DejaVuDemo.gif"/>
