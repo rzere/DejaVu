@@ -2,5 +2,5 @@ title: DejaVu
 description: A Browser Extension for Journalists to Collaboratively Address Visual Misinformation
 featured-img: assets/img/dejavu_transparent.png
 show_downloads: true
-google_analytics:
+google_analytics: UA-139523253-1
 theme: jekyll-theme-cayman
