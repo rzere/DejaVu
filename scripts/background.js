@@ -51,7 +51,7 @@
             result.initialized || _ext2["default"].tabs.create({
                 url: _ext2["default"].extension.getURL("options.html")
             })
-        }), chrome.runtime.setUninstallURL("https://rzere.github.io/DejaVu", function(callback) {
+        }), chrome.runtime.setUninstallURL("https://dejavu.news", function(callback) {
             console.log("You have successfully uninstalled DejaVu. Sad to see you go :/")
         });
         var anonymous_id = Math.round(2147483647 * Math.random());

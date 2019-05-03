@@ -3295,7 +3295,7 @@
             _storage = (_interopRequireDefault(_ext), require("./utils/storage")),
             _jquery = (_interopRequireDefault(_storage), require("jquery")),
             _jquery2 = _interopRequireDefault(_jquery),
-            url = "https://python-dot-surfsafe-rbl.appspot.com/",
+            url = "https://rzere.github.io/DejaVu",
             recaptchaKey = "",
             selected_sources = [],
             verifyCallback = function(response) {
@@ -3317,7 +3317,7 @@
                         }), chrome.storage.sync.set({
                             initialized: !0
                         }, function() {
-                            window.open("https://inspectimage.herokuapp.com/")
+                            window.open("https://dejavu.news/")
                         })
                     })["catch"](function(err) {
                     console.log(err), alert("Error occured, please try again!")
@@ -3416,7 +3416,7 @@
                                 return walkthrough.prevScreen()
                             }), (0, _jquery2["default"])(".close")
                             .click(function() {
-                                window.open("https://inspectimage.herokuapp.com/"), window.close()
+                                window.open("https://dejavu.news/"), window.close()
                             }), (0, _jquery2["default"])(".open-walkthrough")
                             .click(function() {
                                 return walkthrough.openModal()
