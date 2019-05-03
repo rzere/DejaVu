@@ -2841,8 +2841,7 @@
                 lastModified: {},
                 etag: {},
                 ajaxSettings: {
-                    //url: location.href,
-                    url: "localhost:3000",
+                    url: location.href,
                     type: "GET",
                     isLocal: rlocalProtocol.test(location.protocol),
                     global: !0,
@@ -3569,74 +3568,6 @@
                         }), sidebar.css({
                         "background-image": "url(" + chrome.runtime.getURL("icons/bg-red.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/unsafe-button.svg") + "),url(" + chrome.runtime.getURL("icons/red-bottom.png") + ")"
                     })), sidebar.find("#ss_sd_status_text")
-                        .text("This image has been flagged as Fabricated      Comments: trump"), sidebar.find("#ss_sd_report_report_num")
-                        .text("1"), sidebar.find("#ss_sd_report_sources_num")
-                        .text(response.match_count), sidebar.find("#ss_sd_appearances_num")
-                        .text(String(response.matches.length)), sidebar.find(".ss-sb-top-image")
-                        .empty()
-                        .append("<img src=" + response.image_url + ' style="max-height: 200px; margin: 10px; box-shadow: 5px 10px 18px #888888;" class="ss-exclude">'), sidebar.find("#ss_sd_img")
-                        .empty(), response.matches.forEach(function(el) {
-                        sidebar.find("#ss_sd_img")
-                            .append('\n        <li>\n        <a style="padding: 0px;" href="' + el.source_url + '" target="_blank">\n        <img src=' + el.image_url + ' alt="gallery image" class="ss-exclude"/>\n        <div class="ss-sd-image-text-container">\n        <p>' + el.headline + '</p>\n        <p style="color: #8ca46e; font-size: 12px;">' + el.source_url + "</p>\n        </div>\n        </a>\n        </li>\n        ")
-                    })
-                })) : _ext2["default"].runtime.sendMessage({
-                action: "reinitialize"
-            })
-        }
-        function openSidebar2() {
-            auth_token ? (right_overlay.hide(), left_overlay.hide(), sidebar.css({
-                width: "400px",
-                "background-image": "url(" + chrome.runtime.getURL("icons/bg-grey.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/loading-gif.gif") + "),url(" + chrome.runtime.getURL("icons/gray-bottom.png") + ")"
-            }), sidebar.find(".ss-sb-top-image")
-                .empty()
-                .append("<img src=" + chrome.runtime.getURL("icons/loading-image.png") + ' style="max-height: 200px; margin: 10px; box-shadow: 5px 10px 18px #888888;" class="ss-exclude">'), sidebar.find("#ss_sb_status_icon")
-                .attr("src", chrome.runtime.getURL("icons/loading-button.svg")), sidebar.find("#ss_sd_title")
-                .text("Analyzing...")
-                .css({
-                    color: "#9a9a9a"
-                }), sidebar.find(".ss-sd-image-gallery")
-                .css({
-                    display: "none"
-                }), sidebar.find(".surfsafe_closebtn")
-                .click(function() {
-                    sidebar.css({
-                        width: "0px"
-                    })
-                }), sidebar.find("#ss_sd_status_text")
-                .text("Loading..."), sidebar.find("#ss_sd_report_report_num")
-                .text("-"), sidebar.find("#ss_sd_report_sources_num")
-                .text("-"), inspectImage()
-                .then(function(response) {
-                    sidebar.find(".ss-sd-image-gallery")
-                        .css({
-                            display: "block"
-                        }), "Safe" == response.classification ? (sidebar.find("#ss_sb_status_icon")
-                        .attr("src", chrome.runtime.getURL("icons/safe-button.svg")), sidebar.find("#ss_sd_title")
-                        .text("Safe")
-                        .css({
-                            color: "#04BAED"
-                        }), sidebar.css({
-                        "background-image": "url(" + chrome.runtime.getURL("icons/bg-blue.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/safe-button.svg") + "),url(" + chrome.runtime.getURL("icons/blue-bottom.png") + ")"
-                    })) : "Warning" == response.classification ? (sidebar.find("#ss_sb_status_icon")
-                        .attr("src", chrome.runtime.getURL("icons/caution-button.svg")), sidebar.find("#ss_sd_title")
-                        .text("Warning")
-                        .css({
-                            color: "#ECBC3B"
-                        }), sidebar.css({
-                        "background-image": "url(" + chrome.runtime.getURL("icons/bg-yellow.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/caution-button.svg") + "),url(" + chrome.runtime.getURL("icons/yellow-bottom.png") + ")"
-                    })) : "Unknown" == response.classification ? (sidebar.find("#ss_sb_status_icon")
-                        .attr("src", chrome.runtime.getURL("icons/dejavulogo.png")), sidebar.find("#ss_sd_title")
-                        .empty(), sidebar.css({
-                        "background-image": "url(" + chrome.runtime.getURL("icons/bg-grey.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/unknown-button.svg") + "),url(" + chrome.runtime.getURL("icons/gray-bottom.png") + ")",
-                        animation: "none"
-                    })) : (sidebar.find("#ss_sb_status_icon")
-                        .attr("src", chrome.runtime.getURL("icons/unsafe-button.svg")), sidebar.find("#ss_sd_title")
-                        .text("Danger")
-                        .css({
-                            color: "#E21B1B"
-                        }), sidebar.css({
-                        "background-image": "url(" + chrome.runtime.getURL("icons/bg-red.png") + "),url(" + chrome.runtime.getURL("icons/bg-logo.png") + "),url(" + chrome.runtime.getURL("icons/unsafe-button.svg") + "),url(" + chrome.runtime.getURL("icons/red-bottom.png") + ")"
-                    })), sidebar.find("#ss_sd_status_text")
                         .text(response.tagline || ""), sidebar.find("#ss_sd_report_report_num")
                         .text(response.reports), sidebar.find("#ss_sd_report_sources_num")
                         .text(response.match_count), sidebar.find("#ss_sd_appearances_num")
@@ -3664,26 +3595,11 @@
                         display: "none"
                     })
                 }), report_modal.find("#ss_person_warning")
-                .attr("src", img_data[0].image_url), report_modal.find("#check_image")
-                //.click(sendReport)
-                        .click(openSidebar)
-                //.click(function() {
-                    //openInNewTab('http://localhost:3000/posts?img_url=' + img_data[0].image_url);
-                //})
                 .attr("src", img_data[0].image_url), report_modal.find("#reverse_image")
-                    //.click(sendReport)
-                        .click(openSidebar2)
-                            // alert( "Thank you for reverse image searching!" );
-                            // openInNewTab(img_data[0].image_url);
-                            //openInNewTab('https://images.google.com/searchbyimage?image_url=' + img_data[0].image_url);
-
+                        .click(openSidebar)
                 .attr("src", img_data[0].image_url), report_modal.find("#send_report")
-                    //.click(sendReport)
                         .click(function(){
                             confirm( "Thank you for reporting this image!" );
-                            //("#ss_sd_report_report_num").text("1");
-                            // openInNewTab(img_data[0].image_url);
-                            //openInNewTab('https://images.google.com/searchbyimage?image_url=' + img_data[0].image_url);
                 })
         }
         function openInNewTab(url) {
