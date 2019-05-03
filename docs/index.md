@@ -34,6 +34,6 @@ prevent the spreading of fake news.
 
 ## DejaVu Interface
 
-<img src="assets/gif/DejaVuDemo.gif"/><br>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7XVpcCQCVtzJifsDdtj1QjfBsM8glon2Ms2fbkmtmPc9_nA/viewform?embedded=true" width="640" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></>
+<img src="assets/gif/DejaVuDemo.gif"/>
+<br>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7XVpcCQCVtzJifsDdtj1QjfBsM8glon2Ms2fbkmtmPc9_nA/viewform?embedded=true" width="640" height="543" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
