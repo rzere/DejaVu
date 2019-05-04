@@ -7,11 +7,6 @@ layout: default
 DejaVu is a platform that helps journalists
 evaluate images online by allowing them to check whether an image has previously been flagged as suspicious, and report images that they identify as visual misinformation.
 
-## What is Visual Misinformation?
-
-Visual misinformation is defined as an image that is
-misleading, manipulated, or fabricated, or shared outside of context.
-
 ## Why is it Useful?
 
 A large impact of the growth of technology in the last
@@ -31,6 +26,11 @@ determining which images may have been manipulated
 or taken out of their original context or, more broadly
 put, identifying visual misinformation in order to
 prevent the spreading of fake news.
+
+## What is Visual Misinformation?
+
+Visual misinformation is defined as an image that is
+misleading, manipulated, or fabricated, or shared outside of context.
 
 ## DejaVu Interface
 
