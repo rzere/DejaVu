@@ -3,7 +3,6 @@
      alt="DejaVu" height="120" width=auto/></a>
 </p>
 
-# DejaVu
 [![GitHub version](https://badge.fury.io/gh/rzere%2FDejaVu.svg)](https://badge.fury.io/gh/rzere%2FDejaVu)
 
 DejaVu is a browser extension that allows journalists to compare images, determine which images
