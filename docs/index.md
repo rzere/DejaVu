@@ -38,7 +38,7 @@ misleading, manipulated, or fabricated, or shared outside of context.
 
 ## Current Version
 
-We have an [alpha prototype](https://github.com/rzere/DejaVu/) that supports the following functionality:
+We have released our [alpha prototype](https://github.com/rzere/DejaVu/) that supports the following functionality:
 ### Reverse Image Search
 Determine what content is genuine by seeing other appearances of the same image
 ### Checking for Reports
