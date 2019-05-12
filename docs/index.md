@@ -32,10 +32,6 @@ prevent the spreading of fake news.
 Visual misinformation is defined as an image that is
 misleading, manipulated, or fabricated, or shared outside of context.
 
-## DejaVu Interface
-
-<img src="assets/gif/DejaVuDemo.gif"/>
-
 ## Current Version
 
 We have released our [alpha prototype](https://github.com/rzere/DejaVu/) that supports the following functionality:
@@ -46,9 +42,11 @@ Retrieve information on previously reported images such as flags, comments, and 
 ### Reporting Images
 Flag an image as misleading, out-of-context or fabricated and share your findings with others
 
-<br>
+## DejaVu Interface
 
-<div align="center"><img src="assets/img/dejavulogo.png" style="width: 20 !important" /></div>
+<img src="assets/gif/DejaVuDemo.gif"/>
+
+<br>
 
 ## Learn More
 
