@@ -45,8 +45,10 @@ Determine what content is genuine by seeing other appearances of the same image
 Retrieve information on previously reported images such as flags, comments, and the author
 ### Reporting Images
 Flag an image as misleading, out-of-context or fabricated and share your findings with others
+
 <br>
-<div align="center"><img src="assets/img/dejavulogo.png" style="width: 30 !important" /></div>
+
+<div align="center"><img src="assets/img/dejavulogo.png" style="width: 20 !important" /></div>
 
 ## Learn More
 
