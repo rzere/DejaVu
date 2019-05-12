@@ -46,7 +46,7 @@ Retrieve information on previously reported images such as flags, comments, and 
 ### Reporting Images
 Flag an image as misleading, out-of-context or fabricated and share your findings with others
 
-<div align="center"><img src="assets/img/dejavulogo.png" style="width: 50% !important" /></div>
+<div align="center"><img src="assets/img/dejavulogo.png" style="width: 40 !important" /></div>
 
 ## Learn More
 
