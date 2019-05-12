@@ -46,9 +46,11 @@ Retrieve information on previously reported images such as flags, comments, and 
 ### Reporting Images
 Flag an image as misleading, out-of-context or fabricated and share your findings with others
 
+<img src="assets/img/dejavulogo.png" style="width: 50% !important" />
+
 ## Learn More
 
-To learn more about DejaVu, check out our [demo presentation](https://docs.google.com/presentation/d/1zJHZYduhhbf8Ea8A1m0W6uwxP2R_eSRpGic2FkEUiug/edit?usp=sharing) or sign up to email list below!
+To learn more about DejaVu, check out our [demo presentation](https://docs.google.com/presentation/d/1zJHZYduhhbf8Ea8A1m0W6uwxP2R_eSRpGic2FkEUiug/edit?usp=sharing) or sign up for our email list below!
 
-<br><br>
+<br>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7XVpcCQCVtzJifsDdtj1QjfBsM8glon2Ms2fbkmtmPc9_nA/viewform?embedded=true" width="640" height="543" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
